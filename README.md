@@ -1,7 +1,6 @@
-# Prediction biomedical properties of magnetic nanoparticles for MRI and hyperthermia applications
+# Quantifying the efficiency of magnetic nanoparticles for MRI and hyperthermia applications via machine learning methods
 
-Quantitative prediction of SAR and r<sub>1</sub>/r<sub>2</sub> relaxivity values using Machine Learning methods.
-
+Created Machine Learning models quantitative predict SAR (W/g) value (LBMBRegressor with Q<sup>2</sup>=0.86 on 10-fold cross-validation), and r<sub>1</sub>/r<sub>2</sub> relaxivities (mM<sup>-1</sup>s<sup>-1</sup>) values (ExtraTreesRegressor with Q<sup>2</sup>=0.72 and Q<sup>2</sup>=0.71 respectively on 10-fold cross-validation). 
 
 >Directory Database contains .csv files of manually collected and processed databases for training and testing of models.
 >
