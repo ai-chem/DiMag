@@ -17,7 +17,7 @@ from lightgbm import LGBMRegressor
 matplotlib.use('TkAgg')
 
 #importing data from .csv file
-df = pd.read_csv('../Database/r1.csv')
+df = pd.read_csv('../database/r1.csv')
 df = df.loc[:, 'Area/volume':'r1 relaxivity']
 
 #splitting data into descriptors (features) and the predicted (r1 relaxivity) values
