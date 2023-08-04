@@ -15,7 +15,7 @@ matplotlib.use('TkAgg')
 
 
 #importing data from .csv file
-df = pd.read_csv('../Database/SAR.csv')
+df = pd.read_csv('../database/SAR.csv')
 df = df.loc[:, 'Concentration of particles':'SAR']
 
 #splitting data into descriptors (features) and predicted (SAR) values
