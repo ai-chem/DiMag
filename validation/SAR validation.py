@@ -7,19 +7,14 @@ from sklearn.preprocessing import KBinsDiscretizer
 from sklearn.preprocessing import MinMaxScaler
 import pandas as pd
 
-
-
-
 matplotlib.use('TkAgg')
 
 #importing training and testing data from .csv file
-df = pd.read_csv('../Database/SAR.csv')
+df = pd.read_csv('../database/SAR.csv')
 df = df.loc[:, 'Concentration of particles':'SAR']
 
 #importing validation data from .csv file
 df_valid = pd.read_csv('SAR_validation.csv')
-
-
 
 #splitting data into predictors and predicted
 features = df.copy()
