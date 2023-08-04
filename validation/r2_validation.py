@@ -7,16 +7,14 @@ from sklearn.preprocessing import KBinsDiscretizer
 from sklearn.preprocessing import MinMaxScaler
 import pandas as pd
 
-
-
 matplotlib.use('TkAgg')
 
 #importing data from .csv file
-df = pd.read_csv('../Database/r2.csv')
+df = pd.read_csv('../database/r2.csv')
 df = df.loc[:, 'Area/volume':'r2 relaxivity']
 df = df.rename(columns={'Magnetic moment of coating': 'Magnetic moment of shell'})
 
-df_valid = pd.read_csv('r1r2 validation.csv')
+df_valid = pd.read_csv('r1r2_validation.csv')
 
 #splitting data into predictors and predicted
 features = df.copy()
