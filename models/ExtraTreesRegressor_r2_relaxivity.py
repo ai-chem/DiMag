@@ -7,15 +7,11 @@ from sklearn.preprocessing import KBinsDiscretizer
 from sklearn.preprocessing import MinMaxScaler
 import pandas as pd
 
-
-
 matplotlib.use('TkAgg')
 
 #importing data from .csv file
-df = pd.read_csv('../Database/r2.csv')
+df = pd.read_csv('../database/r2.csv')
 df = df.loc[:, 'Area/volume':'r2 relaxivity']
-
-
 
 #splitting data into descriptors (features) and predicted (r2 relaxivity) value
 features = df.copy()
