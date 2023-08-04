@@ -9,16 +9,14 @@ from sklearn.ensemble import ExtraTreesRegressor
 from sklearn.model_selection import cross_val_score
 import pandas as pd
 
-
-
 matplotlib.use('TkAgg')
 
 #importing training and testing data from .csv file
-df = pd.read_csv('../Database/r1.csv')
+df = pd.read_csv('../database/r1.csv')
 df = df.loc[:, 'Area/volume':'r1 relaxivity']
 
 #importing validation data from .csv file
-df_valid = pd.read_csv('r1r2 validation.csv')
+df_valid = pd.read_csv('r1r2_validation.csv')
 
 #splitting data into predictors and predicted
 features = df.copy()
